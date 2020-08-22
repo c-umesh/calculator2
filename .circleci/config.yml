@@ -23,4 +23,5 @@ jobs:
           command: |
             . venv_calc/bin/activate
             pylint calculator.py
+            pycodestyle calculator.py
             pytest -v --cov=calculator
